@@ -8,4 +8,4 @@ config:
 	ln -sf ~/.vim/vimrc.local.bundles ~/.vimrc.local.bundles
 
 install: clean config
-vim +PlugInstall +qall
+	vim +PlugInstall +qall
