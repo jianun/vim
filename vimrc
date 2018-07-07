@@ -47,6 +47,8 @@ Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -355,6 +357,11 @@ augroup vimrc-make-cmake
 augroup END
 
 set autoread
+
+set pastetoggle=<F9>
+
+"sudo save file
+command W w !sudo tee "%" > /dev/null
 
 "*****************************************************************************
 "" Mappings
