@@ -84,6 +84,7 @@ Plug 'tomasr/molokai'
 " c
 Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
 Plug 'ludwig/split-manpage.vim'
+Plug 'bfrg/vim-cpp-modern'
 
 
 " go
@@ -484,6 +485,9 @@ nnoremap <Leader>o :.Gbrowse<CR>
 autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
 
+" vim-cpp-enhanced-highlight
+let g:cpp_simple_highlight = 1
+let g:cpp_concepts_highlight = 1
 
 " go
 " vim-go
